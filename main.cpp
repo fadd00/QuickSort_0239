@@ -77,4 +77,22 @@ q_short(j+1,high); // step 13 recursion untuk sub array yang di kanan
     
 }
 int main() {
+    char ch;
+    do{
+        input();
+        q_short(0, n-1);
+        display();
+        cout <<  "\n\nDo you want to continue? (y/n)";
+        cin >> ch;
+        if (ch == 'n' || ch =='n')
+        {
+            break;
+
+            system("pause")
+            system("cls")
+        }
+        
+    } while (true);
+    
+    return 0
 }
