@@ -22,9 +22,8 @@ void q_short(int low, int high){
     i = low + 1; // step 3
 } 
 // mencari elemen yang lebih besar dari pivot
-while ((arr[i]<= pivot) && (i <= high)) // step 5
-{
-    /* code */
+while ((arr[i]<= pivot) && (i <= high)){ // step 5
+    i++; // step 6
 }
 
 
