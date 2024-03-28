@@ -5,7 +5,29 @@ int arr[20];
 int cmp_count = 0;
 int mov_count = 0;
 int n;
-
+void input()
+{
+    while (true)
+    {
+        cout << "masukan banyaknya elemen array : ";
+        cin >> n;
+        if (n <= 39)
+            break;
+        else
+        {
+            cout << "\nArray dapat mempunyai maksimal 39 eleman.\n";
+        }
+    }
+    cout << endl;
+    cout << "====================" << endl;
+    cout << "masukan elemen array" << endl;
+    cout << "====================" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "data ke-" << (i + 1) << ": ";
+        cin >> arr[i];
+    }
+}
 void swap(int x, int y){
     int temp = arr[x];
     arr[x] = arr[y];
@@ -41,13 +63,6 @@ void q_short(int low, int high){
 }
 q_short(low, j-1); // step 12 recursion untuk sub array yang di kiri
 q_short(j+1,high); // step 13 recursion untuk sub array yang di kanan
-}
-
-
-
-
-
-
-
+} 
 int main() {
 }
