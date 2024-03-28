@@ -35,7 +35,11 @@ void q_short(int low, int high){
     if (i < j){ // step 9
         swap (i,j); // menukar index i dengan index j
     }
+} if (low < j) // step 11
+{
+    
 }
+
 
 
 
