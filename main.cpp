@@ -35,6 +35,11 @@ cmp_count++;
 if (i < j){ // step 9
     swap (i,j); // menukar index i dengan index j
 }
+while (i <= j) // step 10
+{
+
+}
+
 
 
 
