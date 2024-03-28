@@ -29,7 +29,13 @@ while ((arr[i]<= pivot) && (i <= high)){ // step 5
 // mencari elemen lebih kecil atau sama dengan pivot
 while ((arr[j] > pivot) &&  (j >= low + 1)) { //step 7
     j--; //step 8
+    cmp_count++;
 }
+cmp_count++;
+if (i < j){ // step 9
+    swap (i,j); // menukar index i dengan index j
+}
+
 
 
 
