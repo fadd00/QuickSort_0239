@@ -40,6 +40,7 @@ void q_short(int low, int high){
     swap(low, j); // menukar elemen pivot dengan index j
 }
 q_short(low, j-1); // step 12 recursion untuk sub array yang di kiri
+q_short(j+1,high); // step 13 recursion untuk sub array yang di kanan
 }
 
 
