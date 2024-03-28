@@ -28,8 +28,7 @@ while ((arr[i]<= pivot) && (i <= high)){ // step 5
 }
 // mencari elemen lebih kecil atau sama dengan pivot
 while ((arr[j] > pivot) &&  (j >= low + 1)) { //step 7
-
-    /* code */
+    j--; //step 8
 }
 
 
