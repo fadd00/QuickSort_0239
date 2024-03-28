@@ -20,7 +20,7 @@ void q_short(int low, int high){
     } 
     pivot = arr[low]; // step 2
     i = low + 1; // step 3
-} while (i <= j){ // step 10
+ while (i <= j){ // step 10
     // mencari elemen yang lebih besar dari pivot
     while ((arr[i]<= pivot) && (i <= high)){ // step 5
         i++; // step 6
@@ -38,6 +38,8 @@ void q_short(int low, int high){
 } if (low < j) // step 11
 {
     swap(low, j); // menukar elemen pivot dengan index j
+}
+q_short(low, j-1); // step 12 recursion untuk sub array yang di kiri
 }
 
 
