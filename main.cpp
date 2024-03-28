@@ -63,6 +63,18 @@ void q_short(int low, int high){
 }
 q_short(low, j-1); // step 12 recursion untuk sub array yang di kiri
 q_short(j+1,high); // step 13 recursion untuk sub array yang di kanan
-} 
+} void display {
+    cout << "\n------------" << endl;
+    cout << "\sorted array" << endl;
+    cout << "--------------" << endl;
+
+    for (i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << "\n\nnumber of comparison: " << cmp_count << endl;
+    cout << "\n\nnumber of comparison: " << mov_count << endl;
+    
+}
 int main() {
 }
