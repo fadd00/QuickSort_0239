@@ -20,7 +20,14 @@ void q_short(int low, int high){
     } 
     pivot = arr[low]; // step 2
     i = low + 1; // step 3
+} 
+// mencari elemen yang lebih besar dari pivot
+while ((arr[i]<= pivot) && (i <= high)) // step 5
+{
+    /* code */
 }
+
+
 
 int main() {
 }
